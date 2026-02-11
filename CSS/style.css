@@ -121,3 +121,67 @@
     color: white;
     transform: translateY(-2px); /* Petit saut vers le haut au survol */
 }
+/* --- PAGE JEU (Casiers) --- */
+
+.game-wrapper {
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    /* Effet transparent comme ton formulaire */
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1; /* Pour passer devant l'image TV */
+}
+
+/* 1. Header et Logo */
+.header .main-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* 2. Boîtes de message (Haut et Bas) */
+.message-box {
+    background: rgba(115, 115, 115, 0.8); /* Ton gris #737373 transparent */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* 3. Section Casiers */
+.locker-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.locker-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.locker-btn:hover {
+    transform: scale(1.1); /* Zoom quand on survole un casier */
+}
+
+.locker-img {
+    width: 120px; /* Ajuste selon la taille de tes images */
+    height: auto;
+}
+
+/* Optionnel : Animation si tu gagnes */
+.locker-btn:active {
+    transform: scale(0.95);
+}

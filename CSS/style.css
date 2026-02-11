@@ -76,19 +76,48 @@
 /* 7. Le texte (Label) */
 .form-group label {
     display: block;          /* Met le texte au-dessus de la case */
-    color: white;            /* Texte blanc */
+    color: white;          
     margin-bottom: 10px;     /* Espace avant la case de saisie */
-    font-weight: bold;       /* Texte en gras */
+    font-weight: bold;       
     font-family: sans-serif;
 }
 
 /* 8. La zone de saisie (Input Email) */
 .form-group input {
-    width: 100%;             /* Prend toute la largeur de la carte */
+    width: 100%;             
     padding: 12px;           /* Espace à l'intérieur de la case */
     border-radius: 8px;      /* Coins légèrement arrondis */
-    border: none;            /* Enlève la bordure par défaut */
-    outline: none;           /* Enlève le contour bleu quand on clique */
+    border: none;            
+    outline: none;         
     margin-bottom: 20px;     /* Espace avant la checkbox */
     background: rgba(255, 255, 255, 0.9); /* Blanc quasi opaque pour bien lire */
+}
+/* 9. Case à cocher */
+.checkbox-group {
+    display: flex; /* Aligne la case et le texte côte à côte */
+    gap: 10px;     /* Espace précis entre la case et le texte */
+    color: white;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+/* 10. Bouton Valider */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s; /* Durée de l'animation de changement de couleur */
+}
+
+/* Survol bouton */
+.btn-submit:hover {
+    background: #737373; 
+    color: white;
+    transform: translateY(-2px); /* Petit saut vers le haut au survol */
 }

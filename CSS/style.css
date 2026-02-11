@@ -9,9 +9,12 @@
 .logo-top {
     position: absolute;
     width: 100%;
-    height: 100vh;
-    object-fit: cover; 
-    z-index: -1; /* Place l'image derrière */
+    height: auto;      /* Laisse l'image respirer en hauteur */
+    max-height: 100vh; /* Ne dépasse jamais l'écran */
+    object-fit: contain; /* Garde tout le logo visible sans le déformer */
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /* 3. Conteneur principal (Pour centrer la suite) */
@@ -19,8 +22,10 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center;     /* Centre verticalement */
+    flex-direction: column; /* Organise verticalement */
+    justify-content: flex-end; /* Pousse le bouton vers le bas mais pas trop */
+    align-items: center;
+    padding-bottom: 100px;  /* Remonte le bouton de 100px par rapport au bas */
 }
 /* 4. Le bouton (Gris #737373, Transparent, Rond) */
 .btn-play {
@@ -124,20 +129,14 @@
 /* --- PAGE JEU (Casiers) --- */
 
 .game-wrapper {
-    width: 90%;
-    max-width: 600px;
-    padding: 30px;
-    /* Effet transparent comme ton formulaire */
-    background-color: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
+    height: 100vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
-    gap: 20px;
-    z-index: 1; /* Pour passer devant l'image TV */
+    justify-content: center;
+    gap: 30px; /* Espace équilibré entre chaque élément */
+    background: transparent;
 }
 
 /* 1. Header et Logo */
@@ -148,13 +147,14 @@
 
 /* 2. Boîtes de message (Haut et Bas) */
 .message-box {
-    background: rgba(115, 115, 115, 0.8); /* Ton gris #737373 transparent */
+    background: rgba(115, 115, 115, 0.8);
     color: white;
-    padding: 15px 30px;
+    padding: 10px 25px;
     border-radius: 50px;
     border: 1px solid white;
     font-weight: bold;
     text-transform: uppercase;
+    width: fit-content;
 }
 
 /* 3. Section Casiers */

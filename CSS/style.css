@@ -22,3 +22,26 @@
     justify-content: center; /* Centre horizontalement */
     align-items: center;     /* Centre verticalement */
 }
+/* 4. Le bouton (Gris #737373, Transparent, Rond) */
+.btn-play {
+    display: inline-block;
+    padding: 15px 40px;
+    
+    /* Le gris #737373 avec 80% d'opacité (0.8) pour l'effet transparent */
+    background-color: rgba(115, 115, 115, 0.8); 
+    
+    color: white;            /* Texte en blanc */
+    text-decoration: none;   /* Pas de souligné */
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50px;     /* Bords très ronds (Pill shape) */
+    border: 1px solid white; /* Petite bordure blanche fine pour le style */
+    transition: 0.3s;
+}
+
+/* 5. Effet au survol */
+.btn-play:hover {
+    background-color: #737373; /* Devient totalement gris (solide) */
+    transform: scale(1.05);    /* Grossit un peu */
+    cursor: pointer;
+}

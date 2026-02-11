@@ -1,0 +1,24 @@
+/* 1. Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Image de fond (Plein écran) */
+.logo-top {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; 
+    z-index: -1; /* Place l'image derrière */
+}
+
+/* 3. Conteneur principal (Pour centrer la suite) */
+.hero-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;     /* Centre verticalement */
+}

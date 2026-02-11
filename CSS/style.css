@@ -73,3 +73,22 @@
     border-radius: 20px;       /* Coins arrondis */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ombre noire sous la carte */
 }
+/* 7. Le texte (Label) */
+.form-group label {
+    display: block;          /* Met le texte au-dessus de la case */
+    color: white;            /* Texte blanc */
+    margin-bottom: 10px;     /* Espace avant la case de saisie */
+    font-weight: bold;       /* Texte en gras */
+    font-family: sans-serif;
+}
+
+/* 8. La zone de saisie (Input Email) */
+.form-group input {
+    width: 100%;             /* Prend toute la largeur de la carte */
+    padding: 12px;           /* Espace à l'intérieur de la case */
+    border-radius: 8px;      /* Coins légèrement arrondis */
+    border: none;            /* Enlève la bordure par défaut */
+    outline: none;           /* Enlève le contour bleu quand on clique */
+    margin-bottom: 20px;     /* Espace avant la checkbox */
+    background: rgba(255, 255, 255, 0.9); /* Blanc quasi opaque pour bien lire */
+}

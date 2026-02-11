@@ -45,3 +45,31 @@
     transform: scale(1.05);    /* Grossit un peu */
     cursor: pointer;
 }
+/* --- PAGE 2 : LE FORMULAIRE --- */
+
+/* 5. Le conteneur principal (Pour centrer la carte au milieu) */
+.bg-container {
+    height: 100vh;           /* Prend toute la hauteur */
+    width: 100%;
+    display: flex;           /* Mode Flexbox */
+    justify-content: center; /* Centre gauche-droite */
+    align-items: center;     /* Centre haut-bas */
+}
+
+/* 6. La Carte "Glass" (Effet Verre Transparent) */
+.glass-card {
+    width: 350px;              /* Largeur fixe (type mobile/tablette) */
+    padding: 40px;             /* Espace à l'intérieur */
+    
+    /* Fond blanc très transparent (10%) pour voir la TV derrière */
+    background-color: rgba(255, 255, 255, 0.1); 
+    
+    /* Le Flou magique (Blur) */
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); /* Pour que ça marche sur iPhone */
+    
+    /* Bordure fine et Ombre pour le relief */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 20px;       /* Coins arrondis */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ombre noire sous la carte */
+}

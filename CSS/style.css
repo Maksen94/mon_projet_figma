@@ -1,0 +1,187 @@
+/* 1. Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Image de fond (Plein écran) */
+.logo-top {
+    position: absolute;
+    width: 100%;
+    height: auto;      /* Laisse l'image respirer en hauteur */
+    max-height: 100vh; /* Ne dépasse jamais l'écran */
+    object-fit: contain; /* Garde tout le logo visible sans le déformer */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* 3. Conteneur principal (Pour centrer la suite) */
+.hero-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Organise verticalement */
+    justify-content: flex-end; /* Pousse le bouton vers le bas mais pas trop */
+    align-items: center;
+    padding-bottom: 100px;  /* Remonte le bouton de 100px par rapport au bas */
+}
+/* 4. Le bouton (Gris #737373, Transparent, Rond) */
+.btn-play {
+    display: inline-block;
+    padding: 15px 40px;
+    
+    /* Le gris #737373 avec 80% d'opacité (0.8) pour l'effet transparent */
+    background-color: rgba(115, 115, 115, 0.8); 
+    
+    color: white;            /* Texte en blanc */
+    text-decoration: none;   /* Pas de souligné */
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50px;     /* Bords très ronds (Pill shape) */
+    border: 1px solid white; /* Petite bordure blanche fine pour le style */
+    transition: 0.3s;
+}
+
+/* 5. Effet au survol */
+.btn-play:hover {
+    background-color: #737373; /* Devient totalement gris (solide) */
+    transform: scale(1.05);    /* Grossit un peu */
+    cursor: pointer;
+}
+/* --- PAGE 2 : LE FORMULAIRE --- */
+
+/* 5. Le conteneur principal (Pour centrer la carte au milieu) */
+.bg-container {
+    height: 100vh;           /* Prend toute la hauteur */
+    width: 100%;
+    display: flex;           /* Mode Flexbox */
+    justify-content: center; /* Centre gauche-droite */
+    align-items: center;     /* Centre haut-bas */
+}
+
+/* 6. La Carte "Glass" (Effet Verre Transparent) */
+.glass-card {
+    width: 350px;              /* Largeur fixe (type mobile/tablette) */
+    padding: 40px;             /* Espace à l'intérieur */
+    
+    /* Fond blanc très transparent (10%) pour voir la TV derrière */
+    background-color: rgba(255, 255, 255, 0.1); 
+    
+    /* Le Flou magique (Blur) */
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); /* Pour que ça marche sur iPhone */
+    
+    /* Bordure fine et Ombre pour le relief */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 20px;       /* Coins arrondis */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ombre noire sous la carte */
+}
+/* 7. Le texte (Label) */
+.form-group label {
+    display: block;          /* Met le texte au-dessus de la case */
+    color: white;          
+    margin-bottom: 10px;     /* Espace avant la case de saisie */
+    font-weight: bold;       
+    font-family: sans-serif;
+}
+
+/* 8. La zone de saisie (Input Email) */
+.form-group input {
+    width: 100%;             
+    padding: 12px;           /* Espace à l'intérieur de la case */
+    border-radius: 8px;      /* Coins légèrement arrondis */
+    border: none;            
+    outline: none;         
+    margin-bottom: 20px;     /* Espace avant la checkbox */
+    background: rgba(255, 255, 255, 0.9); /* Blanc quasi opaque pour bien lire */
+}
+/* 9. Case à cocher */
+.checkbox-group {
+    display: flex; /* Aligne la case et le texte côte à côte */
+    gap: 10px;     /* Espace précis entre la case et le texte */
+    color: white;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+/* 10. Bouton Valider */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s; /* Durée de l'animation de changement de couleur */
+}
+
+/* Survol bouton */
+.btn-submit:hover {
+    background: #737373; 
+    color: white;
+    transform: translateY(-2px); /* Petit saut vers le haut au survol */
+}
+/* --- PAGE JEU (Casiers) --- */
+
+.game-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espace équilibré entre chaque élément */
+    background: transparent;
+}
+
+/* 1. Header et Logo */
+.header .main-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* 2. Boîtes de message (Haut et Bas) */
+.message-box {
+    background: rgba(115, 115, 115, 0.8);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: 1px solid white;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+/* 3. Section Casiers */
+.locker-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.locker-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.locker-btn:hover {
+    transform: scale(1.1); /* Zoom quand on survole un casier */
+}
+
+.locker-img {
+    width: 120px; /* Ajuste selon la taille de tes images */
+    height: auto;
+}
+
+/* Optionnel : Animation si tu gagnes */
+.locker-btn:active {
+    transform: scale(0.95);
+}

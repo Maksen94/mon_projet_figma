@@ -7,11 +7,12 @@
 
 /* 2. Image de fond (Plein écran) */
 .logo-top {
-    position: absolute;
-    width: 100%;
-    height: auto;      /* Laisse l'image respirer en hauteur */
+    position:fixed;
+    width: 100vw;
+    height: 100vh;      /* Laisse l'image respirer en hauteur */
     max-height: 100vh; /* Ne dépasse jamais l'écran */
     object-fit: cover; /* Garde tout le logo visible sans le déformer */
+    object-position: top center;
     top: 0;
     left: 0;
     z-index: -1;

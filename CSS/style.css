@@ -11,7 +11,7 @@
     width: 100%;
     height: auto;      /* Laisse l'image respirer en hauteur */
     max-height: 100vh; /* Ne dépasse jamais l'écran */
-    object-fit: contain; /* Garde tout le logo visible sans le déformer */
+    object-fit: cover; /* Garde tout le logo visible sans le déformer */
     top: 0;
     left: 0;
     z-index: -1;

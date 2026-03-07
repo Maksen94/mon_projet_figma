@@ -34,14 +34,17 @@
     padding: 15px 40px;
     
     /* Le gris #737373 avec 80% d'opacité (0.8) pour l'effet transparent */
-    background-color: rgba(115, 115, 115, 0.8); 
+    background-color: rgba(115, 115, 115, 0.1); 
+     /* Le Flou magique (Blur) */
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); /* Pour que ça marche sur iPhone */
     
     color: white;            /* Texte en blanc */
     text-decoration: none;   /* Pas de souligné */
     font-size: 22px;
     font-weight: bold;
     border-radius: 50px;     /* Bords très ronds (Pill shape) */
-    border: 1px solid white; /* Petite bordure blanche fine pour le style */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
     transition: 0.3s;
 }
 

@@ -206,4 +206,12 @@
 video {
 height: 650px;
 }
-/* --- RESPONSIVE MOBILE (768px) --- */
+/* --- RESPONSIVE MOBILE (Écrans < 768px) --- */
+.desktop-only {
+        display: none;
+    }
+.mobile-only {
+        display: block !important;
+        position: fixed;   
+    }
+

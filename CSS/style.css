@@ -207,6 +207,7 @@ video {
 height: 650px;
 }
 /* --- RESPONSIVE MOBILE (Écrans < 768px) --- */
+@media (max-width: 768px) {
 .desktop-only {
         display: none;
     }
@@ -214,4 +215,12 @@ height: 650px;
         display: block !important;
         position: fixed;   
     }
-
+.sneaker-video {
+        max-height: 50vh;
+        width: auto;
+}
+.cta-container .btn-play {
+        padding: 10px 20px;
+        font-size: 1.2rem; 
+    }
+}

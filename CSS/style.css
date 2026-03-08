@@ -54,7 +54,7 @@
 }
 /* --- PAGE 2 : LE FORMULAIRE --- */
 
-/* 5. Le conteneur principal (Pour centrer la carte au milieu) */
+/* 6. Le conteneur principal (Pour centrer la carte au milieu) */
 .bg-container {
     height: 100vh;           /* Prend toute la hauteur */
     width: 100%;
@@ -63,7 +63,7 @@
     align-items: center;     /* Centre haut-bas */
 }
 
-/* 6. La Carte "Glass" (Effet Verre Transparent) */
+/* 7. La Carte "Glass" (Effet Verre Transparent) */
 .glass-card {
     width: 350px;              /* Largeur fixe (type mobile/tablette) */
     padding: 40px;             /* Espace à l'intérieur */
@@ -80,7 +80,7 @@
     border-radius: 20px;       /* Coins arrondis */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ombre noire sous la carte */
 }
-/* 7. Le texte (Label) */
+/* 8. Le texte (Label) */
 .form-group label {
     display: block;          /* Met le texte au-dessus de la case */
     color: white;          
@@ -89,7 +89,7 @@
     font-family: sans-serif;
 }
 
-/* 8. La zone de saisie (Input Email) */
+/* 9. La zone de saisie (Input Email) */
 .form-group input, .form-group select {
     width: 100%;             
     padding: 12px;           /* Espace à l'intérieur de la case */
@@ -98,16 +98,22 @@
     outline: none;         
     margin-bottom: 20px;     /* Espace avant la checkbox */
 }
-/* 9. Case à cocher */
+/* 10. Case à cocher */
 .checkbox-group {
     display: flex; /* Aligne la case et le texte côte à côte */
-    gap: 10px;     /* Espace précis entre la case et le texte */
+    gap: 12px;     /* Espace précis entre la case et le texte */
     color: white;
     font-size: 13px;
     margin-bottom: 25px;
+    align-items: flex-start;
+    line-height: 1.4;
+}
+.checkbox-group input[type="checkbox"] {
+    margin-top: 3px; 
+    cursor: pointer;
 }
 
-/* 10. Bouton Valider */
+/* 11. Bouton Valider */
 .btn-submit {
     width: 100%;
     padding: 15px;
@@ -121,7 +127,7 @@
     transition: 0.3s; /* Durée de l'animation de changement de couleur */
 }
 
-/* Survol bouton */
+/* 12 Survol bouton */
 .btn-submit:hover {
     background: #737373; 
     color: white;
@@ -140,19 +146,18 @@
     background: transparent;
 }
 
-/* 1. Header et Logo */
+/* 13 Header et Logo */
 .header .main-logo {
     max-width: 200px;
     height: auto;
 }
 
-/* 2. Boîtes de message (Haut et Bas) */
+/* 14 Boîtes de message (Haut et Bas) */
 .message-box {
     background-color: rgba(255, 255, 255, 0.1); 
     color: white;
     padding: 10px 25px;
     border-radius: 50px;
-    border: 1px solid white;
     font-weight: bold;
     text-transform: uppercase;
     width: fit-content;
@@ -163,7 +168,7 @@
     
 }
 
-/* 3. Section Casiers */
+/* 15 Section Casiers */
 .locker-container {
     display: flex;
     gap: 0px;
@@ -188,15 +193,13 @@
 
 .locker-img {
     display: block;
-    width: 160x; /* Ajuste selon la taille de tes images */
-    height: auto;
+    height: 500px;
 }
 
-/* Optionnel : Animation si tu gagnes */
 .locker-btn:active {
     transform: scale(0.95);
 }
 
 video {
-height: 700px;
+height: 650px;
 }

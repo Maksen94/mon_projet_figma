@@ -92,14 +92,13 @@
 }
 
 /* 8. La zone de saisie (Input Email) */
-.form-group input {
+.form-group input, .form-group select {
     width: 100%;             
     padding: 12px;           /* Espace à l'intérieur de la case */
     border-radius: 8px;      /* Coins légèrement arrondis */
     border: none;            
     outline: none;         
     margin-bottom: 20px;     /* Espace avant la checkbox */
-    background: rgba(255, 255, 255, 0.9); /* Blanc quasi opaque pour bien lire */
 }
 /* 9. Case à cocher */
 .checkbox-group {

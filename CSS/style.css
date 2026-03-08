@@ -194,10 +194,7 @@
 .locker-btn:active {
     transform: scale(0.95);
 }
-.message-box.top {
-    margin-top: 180px; /* Ajuste ce chiffre (120, 150, 180) pour que le texte arrive juste sous le logo */
-    text-align: center;
-}
+
 video {
 height: 700px;
 }

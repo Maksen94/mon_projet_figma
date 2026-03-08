@@ -31,10 +31,8 @@
 /* 4. Le bouton (Gris #737373, Transparent, Rond) */
 .btn-play {
     display: inline-block;
-    padding: 15px 40px;
-    
-    /* Le gris #737373 avec 80% d'opacité (0.8) pour l'effet transparent */
-    background-color: rgba(115, 115, 115, 0.1); 
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.1); 
      /* Le Flou magique (Blur) */
     backdrop-filter: blur(15px); 
     -webkit-backdrop-filter: blur(15px); /* Pour que ça marche sur iPhone */
@@ -150,7 +148,7 @@
 
 /* 2. Boîtes de message (Haut et Bas) */
 .message-box {
-    background: rgba(115, 115, 115, 0.8);
+    background-color: rgba(255, 255, 255, 0.1); 
     color: white;
     padding: 10px 25px;
     border-radius: 50px;
@@ -158,6 +156,11 @@
     font-weight: bold;
     text-transform: uppercase;
     width: fit-content;
+    /* Le Flou magique (Blur) */
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); /* Pour que ça marche sur iPhone */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    
 }
 
 /* 3. Section Casiers */

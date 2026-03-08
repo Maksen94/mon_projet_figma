@@ -14,20 +14,37 @@
 
         <div class="glass-card">
             <form action="jeu.html">
-                
+
                 <div class="form-group">
                <label for="nom">Nom :</label>
                <input type="text" id="nom" name="nom" required>
                 </div>
+
+                 <div class="form-group">
+               <label for="nom">Prénom :</label>
+               <input type="text" id="prénom" name="prénom" required>
+                </div>
                 
                 <div class="form-group">
-                    <label for="email">Adresse Mail:</label>
-                    <input type="email" id="email" name="email" required placeholder="">
+                    <label for="tel">N° téléphone :</label>
+                   <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" required>
                 </div>
+
+                <div class="form-group">
+                    <label for="magasin">Magasin :</label>
+                    <select id="magasin" name="magasin" required>
+                      <option value="">-- Choisir --</option>
+                      <option value="paris">Paris</option>
+                      <option value="Lyon">Lyon</option>
+                      <option value="Marseille">Marseille</option>
+                      <option value="Lille">Lille</option>
+                    </select>
+                </div>
+                
 
                 <div class="checkbox-group">
                     <input type="checkbox" id="cgu" required>
-                    <label for="cgu">Je certifie que j'ai plus de 18 ans et j'accepte le règlement du concours</label>
+                    <label for="cgu">J’accepte l’utilisation de mes données par Foot Locker pour le jeu et la réception d’offres exclusives.</label>
                 </div>
 
                 <button type="submit" class="btn-submit">Valider</button>

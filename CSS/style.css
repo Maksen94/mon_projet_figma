@@ -210,17 +210,39 @@ height: 650px;
 @media (max-width: 768px) {
 .desktop-only {
         display: none;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 .mobile-only {
         display: block !important;
         position: fixed;   
     }
+.hero-wrapper {
+    justify-content: center;
+}
+.locker-img {
+        height: 400px;
+        width: auto;
+}
+.game-wrapper {
+        justify-content: flex-start;
+        padding-top: 140px;
+        gap: 10px; 
+}
+.glass-card {
+        width: 70%;
+        padding: 25px;
+}
 .sneaker-video {
-        max-height: 50vh;
+        max-height: 45vh;
         width: auto;
 }
 .cta-container .btn-play {
         padding: 10px 20px;
         font-size: 1.2rem; 
-    }
+}
 }

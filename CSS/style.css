@@ -21,6 +21,7 @@
     z-index: -1;
 }
 
+
 /* 3. Conteneur principal (Pour centrer la suite) */
 .hero-wrapper {
     height: 100vh;
@@ -211,8 +212,10 @@ height: 650px;
     display: none;
 }
 @media (max-width: 768px) {
+.desktop-only {
+    display: none;
+}
 .mobile-only {
-        display: none;
         width: 100vw;
         height: 100vh;
         object-fit: cover;

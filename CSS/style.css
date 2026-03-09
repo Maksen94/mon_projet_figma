@@ -250,3 +250,93 @@ height: 650px;
         font-size: 1.2rem; 
 }
 }
+
+/* Fond spécifique pour la page règles */
+.bg-regles {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: black url('IMAGES/background.png') center/cover no-repeat; /* Ton image de casiers */
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+/* Conteneur pour tout centrer */
+.overlay-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Voile noir pour faire ressortir le texte */
+}
+
+/* Logo en haut */
+.logo-rules {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+/* La carte des règles (Glassmorphism) */
+.rules-card {
+    background-color: rgba(255, 255, 255, 0.15); /* Blanc très transparent */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 50px 40px;
+    border-radius: 60px; /* Coins très arrondis comme sur l'image */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.rules-card h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.rules-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Texte aligné à gauche dans la boîte centrée */
+    display: inline-block; /* Pour que le bloc reste au milieu */
+}
+
+.rules-card li {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* Bouton JE JOUE */
+.btn-jouer {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    text-decoration: none;
+    padding: 15px 50px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+.btn-jouer:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Style pour le logo sur la page des règles */
+.logo {
+    width: 150px;       /* Ajustez cette valeur pour agrandir le logo */
+    height: auto;       /* Garde les proportions de l'image */
+    margin-bottom: 20px; /* Ajoute de l'espace sous le logo */
+    display: block;
+}

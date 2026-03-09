@@ -207,6 +207,9 @@ video {
 height: 650px;
 }
 /* --- RESPONSIVE MOBILE (Écrans < 768px) --- */
+.mobile-only {
+    display: none;
+}
 @media (max-width: 768px) {
 .desktop-only {
         display: none;
